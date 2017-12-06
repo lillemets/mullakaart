@@ -12,7 +12,7 @@ load('mullakaart.Rda')
 
 ## Objektid
 load('C:/Users/lillemets/Dropbox/data/objects/maps/world.Rda') # Kaart
-load('/home/jrl/data/objects/maps/world.Rda') # Kaart
+world.df <- readRDS('/home/jrl/data/objects/maps/world.Rds') # Kaart
 
 ## Prantsusmaa kood parandada
 levels(world.df$ISO_A2) <- c(levels(world.df$ISO_A2), 'FR')
